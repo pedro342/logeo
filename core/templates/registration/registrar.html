@@ -1,0 +1,17 @@
+{% extends 'core/base.html' %}
+{% block content %}
+
+<h3>Registrarse</h3>
+
+<br>
+
+    <form method="POST">
+        {% csrf_token %}
+
+        {{ form }}
+
+        <button type="submit" class="btn btn-primary">Registrarse</button>    
+
+        </form>
+
+{% endblock %}

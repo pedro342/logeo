@@ -1,0 +1,19 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+
+<h3>Registrar dispositivos</h3>
+
+<br>
+
+    <form method="post">
+
+        {% csrf_token %}
+
+        {{ formDisp }}
+
+        <button type=submit="submit">Registrar dispositivo</button>
+        
+    </form>
+
+{% endblock %}

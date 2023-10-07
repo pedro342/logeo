@@ -4,10 +4,27 @@
 
 <h3>Dispositivos</h3>
 
-<p>Dispositivo 1</p>
-<p>Dispositivo 2</p>
-<p>Dispositivo 3</p>
-<p>Dispositivo 4</p>
-<p>Dispositivo 5</p>
+<table>
+    <thead>
+        <tr>
+            <th scope="col">Marca</th>
+            <th scope="col">Modelo</th>
+            <th scope="col">Fecha del dispositivo</th>
+        </tr>        
+    </thead>
+
+    <tbody>
+        {% for dispo in dispositivosDic %}
+        <tr>
+            <th scope="row"> {{ dispo.id }}</th>
+            <td>{{ dispo.marca_dispositivos }}</td>
+            <td>{{ dispo.modelo_dispositivos }}</td>
+            <td>{{ dispo.fecha_dispositivos }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<li><a href={% url 'registrarDispositivos' %}>Registrar Dispositivo</a></li> 
 
 {% endblock %}
