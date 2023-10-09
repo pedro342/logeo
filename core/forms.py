@@ -1,10 +1,10 @@
 from django import forms
-from .models import dispositivos, usuarios
+from .models import CustomUser, dispositivos
 
 class usuarioForm(forms.ModelForm):
     class Meta:
-        model = usuarios
-        fields = '__all__'
+        model = CustomUser
+        fields = ['nombre_usuario', 'email_usuario', 'password']
 
 class dispositivoForm(forms.ModelForm):
     class Meta:

@@ -3,7 +3,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth import logout
 from django.views import View
 from .forms import usuarioForm, dispositivoForm
-from .models import dispositivos
+from .models import dispositivos, CustomUser
 from django.contrib.auth import login, logout, authenticate
 
 
@@ -34,9 +34,11 @@ class formularioUsuariosView(View):
     
     def post(self, request):
         usuarioVar = usuarioForm(request.POST)
-        if usuarioVar.is_valid():
-            usuarioVar.save()
-            usuarioVar = usuarioForm()
+        if request.method == 'POST':
+            nombre_usuario = request.POST['nombre_usuario']
+            email_usuario = request.POST['email_usuario']
+            password = request.POST['password']
+            user = CustomUser.objects.create_user(nombre_usuario=nombre_usuario, email_usuario=email_usuario, password=password)
         return render(request, 'registration/registrar.html', {'form': usuarioVar, "mensaje": 'OK'})
 
 class formularioDispositivoView(View):
