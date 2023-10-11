@@ -1,5 +1,6 @@
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, PermissionsMixin
 from django.db import models
+from django.db.models import ForeignKey
 
 class CustomUserManager(BaseUserManager):
     def create_user(self, nombre_usuario, email_usuario, password=None, **extra_fields):

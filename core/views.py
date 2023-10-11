@@ -62,6 +62,7 @@ class formularioDispositivoView(View):
 @login_required
 def listar_dispositivos(request):
     dispositivosVar = dispositivos.objects.all()
+    dispositivosVar = dispositivos.objects.filter(propietario=request.user)
     return render(request, 'core/dispositivos.html', {"dispositivosDic": dispositivosVar})
 
 def loginView(request):
