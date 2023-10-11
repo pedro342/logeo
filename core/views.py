@@ -39,12 +39,11 @@ class formularioUsuariosView(View):
             nombre_usuario = request.POST.get('nombre_usuario', None)
             if User.objects.filter(nombre_usuario=nombre_usuario).exists():
                 return render(request, 'registration/existentes.html', {'error': 'El nombre de usuario ya existe.'})
-        else:
             email_usuario = request.POST['email_usuario']
             if User.objects.filter(email_usuario=email_usuario).exists():
                 return render(request, 'registration/existentes.html', {'error': 'El email ya existe.'})
             password = request.POST['password']
-            user = CustomUser.objects.create_user(nombre_usuario=nombre_usuario, email_usuario=email_usuario, password=password)
+        user = CustomUser.objects.create_user(nombre_usuario=nombre_usuario, email_usuario=email_usuario, password=password)
         return render(request, 'registration/registrar.html', {'form': usuarioVar, "mensaje": 'OK'})
 
 class formularioDispositivoView(View):
