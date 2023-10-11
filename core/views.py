@@ -5,7 +5,7 @@ from django.views import View
 from .forms import usuarioForm, dispositivoForm
 from .models import dispositivos, CustomUser
 from django.contrib.auth import login, logout, authenticate
-
+from django.contrib.auth import get_user_model
 
 
 # Create your views here.
@@ -33,10 +33,16 @@ class formularioUsuariosView(View):
         return render(request, 'registration/registrar.html', {'form': usuarioVar})
     
     def post(self, request):
+        User = get_user_model()
         usuarioVar = usuarioForm(request.POST)
         if request.method == 'POST':
-            nombre_usuario = request.POST['nombre_usuario']
+            nombre_usuario = request.POST.get('nombre_usuario', None)
+            if User.objects.filter(nombre_usuario=nombre_usuario).exists():
+                return render(request, 'registration/existentes.html', {'error': 'El nombre de usuario ya existe.'})
+        else:
             email_usuario = request.POST['email_usuario']
+            if User.objects.filter(email_usuario=email_usuario).exists():
+                return render(request, 'registration/existentes.html', {'error': 'El email ya existe.'})
             password = request.POST['password']
             user = CustomUser.objects.create_user(nombre_usuario=nombre_usuario, email_usuario=email_usuario, password=password)
         return render(request, 'registration/registrar.html', {'form': usuarioVar, "mensaje": 'OK'})
