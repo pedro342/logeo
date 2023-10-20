@@ -84,11 +84,11 @@ WSGI_APPLICATION = 'logeo.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'logeo',
-        'USER': 'root',
-        'PASSWORD': 'Ze5n74ns13.',
-        'HOST':'localhost',
-        'PORT':'3306',
+        'NAME': 'railway',
+        'USER': 'uroot',
+        'PASSWORD': 'pHuTNrqcg3BydAPwPiByg.',
+        'HOST':'hcontainers-us-west-93.railway.app',
+        'PORT':'5757',
     }
 }
 
