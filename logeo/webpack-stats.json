@@ -1,0 +1,94 @@
+{
+  "status": "done",
+  "assets": {
+    "main-07925cb9e8f85976a14b.js": {
+      "name": "main-07925cb9e8f85976a14b.js",
+      "path": "/home/pedro/Desktop/logeo/logeo/assets/webpack_bundles/main-07925cb9e8f85976a14b.js"
+    },
+    "main-0e208e4360023bd9ec41.js": {
+      "name": "main-0e208e4360023bd9ec41.js",
+      "path": "/home/pedro/Desktop/logeo/logeo/assets/webpack_bundles/main-0e208e4360023bd9ec41.js"
+    },
+    "main-12ba961431a309aac378.js": {
+      "name": "main-12ba961431a309aac378.js",
+      "path": "/home/pedro/Desktop/logeo/logeo/assets/webpack_bundles/main-12ba961431a309aac378.js"
+    },
+    "main-16851ee3b7f3abe8e2f5.js": {
+      "name": "main-16851ee3b7f3abe8e2f5.js",
+      "path": "/home/pedro/Desktop/logeo/logeo/assets/webpack_bundles/main-16851ee3b7f3abe8e2f5.js"
+    },
+    "main-200c8087fd5375b5e668.js": {
+      "name": "main-200c8087fd5375b5e668.js",
+      "path": "/home/pedro/Desktop/logeo/logeo/assets/webpack_bundles/main-200c8087fd5375b5e668.js"
+    },
+    "main-247a4f3722e044709aa5.js": {
+      "name": "main-247a4f3722e044709aa5.js",
+      "path": "/home/pedro/Desktop/logeo/logeo/assets/webpack_bundles/main-247a4f3722e044709aa5.js"
+    },
+    "main-2b6a4014bee11a443f58.js": {
+      "name": "main-2b6a4014bee11a443f58.js",
+      "path": "/home/pedro/Desktop/logeo/logeo/assets/webpack_bundles/main-2b6a4014bee11a443f58.js"
+    },
+    "main-3078976aa8c6c72904cf.js": {
+      "name": "main-3078976aa8c6c72904cf.js",
+      "path": "/home/pedro/Desktop/logeo/logeo/assets/webpack_bundles/main-3078976aa8c6c72904cf.js"
+    },
+    "main-34121571b342bba2af39.js": {
+      "name": "main-34121571b342bba2af39.js",
+      "path": "/home/pedro/Desktop/logeo/logeo/assets/webpack_bundles/main-34121571b342bba2af39.js"
+    },
+    "main-3a9383a9e6f06d702948.js": {
+      "name": "main-3a9383a9e6f06d702948.js",
+      "path": "/home/pedro/Desktop/logeo/logeo/assets/webpack_bundles/main-3a9383a9e6f06d702948.js"
+    },
+    "main-568e67757c672d22ac81.js": {
+      "name": "main-568e67757c672d22ac81.js",
+      "path": "/home/pedro/Desktop/logeo/logeo/assets/webpack_bundles/main-568e67757c672d22ac81.js"
+    },
+    "main-6bd84ca7c7d5b1f93e05.js": {
+      "name": "main-6bd84ca7c7d5b1f93e05.js",
+      "path": "/home/pedro/Desktop/logeo/logeo/assets/webpack_bundles/main-6bd84ca7c7d5b1f93e05.js"
+    },
+    "main-6c9f7c704779cc7391f3.js": {
+      "name": "main-6c9f7c704779cc7391f3.js",
+      "path": "/home/pedro/Desktop/logeo/logeo/assets/webpack_bundles/main-6c9f7c704779cc7391f3.js"
+    },
+    "main-70cda8107f9ec0b872e3.js": {
+      "name": "main-70cda8107f9ec0b872e3.js",
+      "path": "/home/pedro/Desktop/logeo/logeo/assets/webpack_bundles/main-70cda8107f9ec0b872e3.js"
+    },
+    "main-742db57da9c3fa5a46a5.js": {
+      "name": "main-742db57da9c3fa5a46a5.js",
+      "path": "/home/pedro/Desktop/logeo/logeo/assets/webpack_bundles/main-742db57da9c3fa5a46a5.js"
+    },
+    "main-808078afffd5a079d4f8.js": {
+      "name": "main-808078afffd5a079d4f8.js",
+      "path": "/home/pedro/Desktop/logeo/logeo/assets/webpack_bundles/main-808078afffd5a079d4f8.js"
+    },
+    "main-84ba4f5657d7f2022b81.js": {
+      "name": "main-84ba4f5657d7f2022b81.js",
+      "path": "/home/pedro/Desktop/logeo/logeo/assets/webpack_bundles/main-84ba4f5657d7f2022b81.js"
+    },
+    "main-99a97296932455accc73.js": {
+      "name": "main-99a97296932455accc73.js",
+      "path": "/home/pedro/Desktop/logeo/logeo/assets/webpack_bundles/main-99a97296932455accc73.js"
+    },
+    "main-b0cfcbf3f12c59a2a4d9.js": {
+      "name": "main-b0cfcbf3f12c59a2a4d9.js",
+      "path": "/home/pedro/Desktop/logeo/logeo/assets/webpack_bundles/main-b0cfcbf3f12c59a2a4d9.js"
+    },
+    "main-b186336d4e05aafe5c24.js": {
+      "name": "main-b186336d4e05aafe5c24.js",
+      "path": "/home/pedro/Desktop/logeo/logeo/assets/webpack_bundles/main-b186336d4e05aafe5c24.js"
+    },
+    "main-c11e9c62de60cf6ca76b.js": {
+      "name": "main-c11e9c62de60cf6ca76b.js",
+      "path": "/home/pedro/Desktop/logeo/logeo/assets/webpack_bundles/main-c11e9c62de60cf6ca76b.js"
+    }
+  },
+  "chunks": {
+    "main": [
+      "main-568e67757c672d22ac81.js"
+    ]
+  }
+}

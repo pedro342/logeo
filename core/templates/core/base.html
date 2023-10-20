@@ -14,7 +14,8 @@
     {% if user.is_authenticated %}
         <li><a href={% url 'home' %}>Inicio</a></li>
         <li><a href={% url 'dispositivosView' %}>Dispositivos</a></li>
-        <li><a href="{% url 'logoutAuth' %}">Cerrar sesión</a></li>
+        <li><a href={% url 'progView' %}>Programar</a></li>
+        <li><a href={% url 'logoutAuth' %}>Cerrar sesión</a></li>
     {% else %}
         <li><a href={% url 'login' %}>Ingresar</a></li>
         <li><a href={% url 'dispositivosView' %}>Dispositivos</a></li>

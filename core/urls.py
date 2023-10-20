@@ -9,4 +9,5 @@ urlpatterns = [
     path('registrarDispositivos/', formularioDispositivoView.as_view(), name='registrarDispositivos'),  
     path('loginAuthenticate/', loginView, name='loginAuth'),
     path('logout/', logoutView, name='logoutAuth'),
+    path('progView/', blocklyView, name='progView'),
 ]

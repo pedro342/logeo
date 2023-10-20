@@ -1,0 +1,15 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+{% load render_bundle from webpack_loader %}
+
+{% block content %}
+
+<!-- Aquí puedes crear un div para el Blockly workspace -->
+
+<div id="blocklyDiv" style="height: 480px; width: 600px;"></div>
+<div id="toolbox"></div>
+
+{% render_bundle 'main' %}
+
+{% endblock %}

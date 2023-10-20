@@ -78,3 +78,6 @@ def loginView(request):
 def logoutView(request):
     logout(request)
     return redirect('home')
+
+def blocklyView(request):
+    return render(request, 'core/blockly.html')
