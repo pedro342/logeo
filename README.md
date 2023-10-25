@@ -15,7 +15,7 @@ To run this project run this in the console
 ```bash
   npx webpack --config webpack.config.js --watch --mode 'production'
 ```
-## And Then
+## And Then On New Console
 ```bash
   py manage.py runserver
 ```
